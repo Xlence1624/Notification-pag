@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+*{
+   
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "plus jakarta sans", sans-serif;
+    margin: 0;
+    padding: 0 10px;
+    background-color: #f7fafd;
+}
+
+main{ background-color: #fff;
+padding: 31px;
+max-width: 730px;
+border: 15px;
+margin: 63px auto;}
+
+h1{
+    font-weight: 800;
+    font-size: 24px;
+    color: #1c202b;
+}
+h1 span{
+    background-color: #0a327b;
+    padding: 2px 11px 4px 11px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 6px;
+    margin-left: 9px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+button{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inherit;
+    color: #5e6778;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #0a327b;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 31px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    color: #5e6778;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+    padding: 17px 20px;
+    margin-bottom: 8px;
+}
+
+.avatar{
+    height: 45px;
+    width: 45px;
+}
+
+a.primary{
+    color: #1c202b;
+    margin-right: 3px;
+}
+
+a.secondary{
+    color: #5e6778;
+    margin-left: 3px;
+}
+
+a.blue{
+    color: #0a327b;
+    margin-left: 3px;
+}
+
+a{
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0a327b;
+}
+
+li.unread{
+    background: #f7fafd;
+}
+
+li.unread .notification::after{
+    content: "";
+    height: 8px;
+width: 8px;
+background: #f65552;
+border-radius: 50%;
+display: inline-block;
+margin  0 0 1px 5px}
+
+.image{
+    height:45px;
+    width: 45px;
+    margin-left: auto
+}
+
+.card{
+    padding:18px 20px;
+border:1px solid #dde7ee;
+    margin-top: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card:hover{
+    background: #e5effa;
+}
+@media(max-width:461px){
+    body{
+        padding: 0;;
+    }
+
+    h1{font-size: 20px;}
+
+    button{
+        font-size: 14px;
+    }
+
+    li{font-size:14px;
+        padding: 16px;}
+
+        a,
+        .time{
+            font-size: 14px;
+        }
+     
+
+    
+    main{
+        margin: 0;
+        border-radius: 0;
+        padding: 24px 16px;
+    }
+}
